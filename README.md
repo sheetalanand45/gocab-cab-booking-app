@@ -2,9 +2,9 @@
 
 GoCab is a responsive cab-booking web application that connects riders and drivers through a simple booking experience. Built with Next.js, TypeScript, and Supabase, it supports user authentication, map-based route visualization, distance-based fare estimation, ride management, and driver operations.
 
-🌐 **Live Demo:** [Add your Vercel deployment URL here]
+🌐 **Live Demo:** [[Add your Vercel deployment URL here]](https://gocab-cab-booking-app.vercel.app/)
 
-📂 **GitHub Repository:** [Add your GitHub repository URL here]
+📂 **GitHub Repository:** [[Add your GitHub repository URL here]](https://github.com/sheetalanand45/gocab-cab-booking-app)
 
 ## ✨ Features
 
