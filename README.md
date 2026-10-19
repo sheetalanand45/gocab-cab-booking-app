@@ -1,36 +1,125 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚕 GoCab — Cab Booking Web Application
 
-## Getting Started
+GoCab is a responsive cab-booking web application that connects riders and drivers through a simple booking experience. Built with Next.js, TypeScript, and Supabase, it supports user authentication, map-based route visualization, distance-based fare estimation, ride management, and driver operations.
 
-First, run the development server:
+🌐 **Live Demo:** [Add your Vercel deployment URL here]
+
+📂 **GitHub Repository:** [Add your GitHub repository URL here]
+
+## ✨ Features
+
+- **User Authentication:** Sign up and log in using Supabase authentication.
+- **Rider Dashboard:** Select pickup and drop-off locations and book rides.
+- **Driver Dashboard:** Manage driver availability and handle ride requests.
+- **Interactive Maps:** View locations and routes using OpenStreetMap.
+- **Route and Distance Calculation:** Calculate routes using OpenRouteService.
+- **Fare Estimation:** Estimate ride fares based on route distance and cab pricing.
+- **Ride Management:** View ride history, track ride status, and cancel eligible rides.
+- **Ride Receipts:** View and print ride receipts or save them as PDF.
+- **Payment Method Selection:** Choose available demo payment methods.
+- **Responsive UI:** Use the application across desktop and mobile screen sizes.
+- **Database Security:** Use Supabase Row Level Security (RLS) policies to restrict access to authorized records.
+
+## 🛠️ Tech Stack
+
+| Technology | Purpose |
+|---|---|
+| Next.js | React framework and application routing |
+| React | User interface |
+| TypeScript | Type safety |
+| Tailwind CSS | Styling and responsive layouts |
+| Supabase | Authentication, PostgreSQL database, and access policies |
+| OpenStreetMap | Map data |
+| Leaflet | Interactive map rendering |
+| OpenRouteService | Route and distance calculations |
+| Vercel | Deployment and hosting |
+| Git & GitHub | Version control and source code management |
+
+## ⚙️ Getting Started
+
+### Prerequisites
+
+- Node.js and npm
+- A Supabase project
+- An OpenRouteService API key
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/YOUR-USERNAME/gocab-cab-booking-app.git
+cd gocab-cab-booking-app
+```
+
+Replace `YOUR-USERNAME` with your GitHub username.
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Configure environment variables
+
+Create a `.env.local` file in the project root:
+
+```env
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_project_url
+NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY=your_supabase_publishable_key
+OPENROUTESERVICE_API_KEY=your_openrouteservice_api_key
+```
+
+Replace the placeholder values with your own credentials. Never commit `.env.local` or expose private API keys in public repositories.
+
+### 4. Start the development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 5. Build for production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+```
 
-## Learn More
+## 🚀 Deployment
 
-To learn more about Next.js, take a look at the following resources:
+GoCab is deployed using Vercel.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+To deploy your own instance:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Push the project to GitHub.
+2. Import the repository into Vercel.
+3. Configure the required environment variables in Vercel.
+4. Deploy the application.
+5. Configure the production URL and authentication redirect settings in Supabase.
 
-## Deploy on Vercel
+## 💳 Payment Status
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Payment methods are currently implemented in demo mode. This project does not yet process real payments through a payment gateway. A production payment integration would require a provider such as Razorpay or Stripe, server-side payment verification, and appropriate security controls.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🔐 Security Notes
+
+- Keep API credentials out of source control.
+- Use Supabase Row Level Security to protect rider and driver records.
+- Validate sensitive operations on the server.
+- Do not treat a client-side payment selection as proof of payment.
+
+## 🎯 Project Goals
+
+GoCab was developed to explore full-stack web development, authentication, database integration, API usage, mapping, route-based fare estimation, role-based application workflows, and deployment.
+
+## 👩‍💻 Author
+
+**Sheetal Anand**
+
+B.Tech Computer Science Engineering | GGSIPU
+
+- GitHub: [Your GitHub Profile](https://github.com/YOUR-USERNAME)
+- Portfolio: [Your Portfolio URL](YOUR-PORTFOLIO-URL)
+
+---
+
+*GoCab — making cab booking simpler through technology.*
