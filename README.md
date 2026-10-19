@@ -117,8 +117,8 @@ GoCab was developed to explore full-stack web development, authentication, datab
 
 B.Tech Computer Science Engineering | GGSIPU
 
-- GitHub: [Your GitHub Profile](https://github.com/YOUR-USERNAME)
-- Portfolio: [Your Portfolio URL](YOUR-PORTFOLIO-URL)
+- GitHub: [Your GitHub Profile](https://github.com/sheetalanand45)
+- Portfolio: [Your Portfolio URL](https://portfolio-admin-management-system.vercel.app)
 
 ---
 
